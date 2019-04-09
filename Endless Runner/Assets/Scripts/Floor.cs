@@ -3,12 +3,8 @@ using UnityEngine;
 
 public class Floor : MonoBehaviour {
 
-    public static int speed = 5;
+    public static int speed = 10;
     
-    // Use this for initialization
-    void Start() {
-    }
-
     // Update is called once per frame
     void Update() {
         if (transform.position.x > 16) 

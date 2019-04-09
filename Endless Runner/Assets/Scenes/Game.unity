@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -58536,8 +58536,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.45, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 723384039}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58555,7 +58554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   rb: {fileID: 295699093}
-  thrust: 2
+  thrust: 7
 --- !u!54 &295699093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58610,8 +58609,8 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 2
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
+  m_SensorSize: {x: 36, y: 25}
+  m_LensShift: {x: 0, y: 0.21}
   m_GateFitMode: 2
   m_FocalLength: 19.71
   m_NormalizedViewPortRect:
@@ -58622,7 +58621,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 62.668453
+  field of view: 64.7654
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -58647,20 +58646,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723384036}
-  m_LocalRotation: {x: 0.11539455, y: -0.6976275, z: 0.11539456, w: 0.6976275}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.20673802, y: -0.67620957, z: 0.20673802, w: 0.67620957}
+  m_LocalPosition: {x: 7.1, y: 3.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 295699091}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 18.785002, y: -90.00001, z: 0}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 34, y: -90.00001, z: 0}
 --- !u!43 &1120529700
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh11698
+  m_Name: pb_Mesh18814
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -58844,7 +58843,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 733285986086180204, guid: e9e140fa2d5e34d4da1570e9fbfd4846, type: 3}
+  - {fileID: 8124270688918430448, guid: baab7c7d08b4c9f4e86feeb2018cc5dc, type: 3}
+  - {fileID: 2972657549347397587, guid: ca0af95084659f94f95ffbb122940225, type: 3}
 --- !u!4 &1470424066
 Transform:
   m_ObjectHideFlags: 0

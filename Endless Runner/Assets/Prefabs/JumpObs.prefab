@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8700711504516635367}
   - component: {fileID: 8700711504516635366}
   - component: {fileID: 8700711504516635365}
-  - component: {fileID: 8700711504516635364}
   - component: {fileID: 3376605423091983728}
+  - component: {fileID: 8192302151080757057}
   m_Layer: 0
   m_Name: JumpObs
   m_TagString: Untagged
@@ -717,20 +717,6 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
---- !u!64 &8700711504516635364
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8700711504516635363}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
 --- !u!114 &3376605423091983728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,3 +729,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f62f178b2dfc794481307b596e22789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8192302151080757057
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8700711504516635363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8, y: 1.0187838, z: 1}
+  m_Center: {x: -0.9, y: 0.5093918, z: 0.5}

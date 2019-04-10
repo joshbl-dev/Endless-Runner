@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6003acf8-c766-456d-9f6e-8cbd025f2216" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Endless Runner/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Endless Runner/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Endless Runner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Endless Runner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floor.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floor.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/JumpObs.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/JumpObs.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProBuilder.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProCore/ProBuilder.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProCore/ProBuilder/Data/ProBuilderPreferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProCore/ProBuilder/Data/ProBuilderPreferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CloseButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CloseButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JumpObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JumpObstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-    </list>
+    <list default="true" id="6003acf8-c766-456d-9f6e-8cbd025f2216" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,14 +36,14 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding>
-                <marker date="1554830843374" expanded="false" signature="6:44" ph="..." />
-                <marker date="1554830843374" expanded="true" signature="88:735" ph="{...}" />
-                <marker date="1554830843374" expanded="true" signature="220:265" ph="{...}" />
-                <marker date="1554830843374" expanded="true" signature="296:733" ph="{...}" />
-                <marker date="1554830843374" expanded="true" signature="319:727" ph="{...}" />
-                <marker date="1554830843374" expanded="true" signature="351:525" ph="{...}" />
+                <marker date="1554830873408" expanded="false" signature="6:44" ph="..." />
+                <marker date="1554830873408" expanded="true" signature="88:733" ph="{...}" />
+                <marker date="1554830873408" expanded="true" signature="220:265" ph="{...}" />
+                <marker date="1554830873408" expanded="true" signature="296:731" ph="{...}" />
+                <marker date="1554830873408" expanded="true" signature="319:725" ph="{...}" />
+                <marker date="1554830873408" expanded="true" signature="351:525" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -202,12 +184,12 @@
       <workItem from="1554501011680" duration="12519000" />
       <workItem from="1554739855196" duration="1122000" />
       <workItem from="1554815064394" duration="2647000" />
-      <workItem from="1554827599672" duration="3235000" />
+      <workItem from="1554827599672" duration="3514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22249000" />
+    <option name="totallyTimeSpent" value="22528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -220,7 +202,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24048583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -449,14 +430,14 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FloorSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
           <folding>
-            <marker date="1554830843374" expanded="false" signature="6:44" ph="..." />
-            <marker date="1554830843374" expanded="true" signature="88:735" ph="{...}" />
-            <marker date="1554830843374" expanded="true" signature="220:265" ph="{...}" />
-            <marker date="1554830843374" expanded="true" signature="296:733" ph="{...}" />
-            <marker date="1554830843374" expanded="true" signature="319:727" ph="{...}" />
-            <marker date="1554830843374" expanded="true" signature="351:525" ph="{...}" />
+            <marker date="1554830873408" expanded="false" signature="6:44" ph="..." />
+            <marker date="1554830873408" expanded="true" signature="88:733" ph="{...}" />
+            <marker date="1554830873408" expanded="true" signature="220:265" ph="{...}" />
+            <marker date="1554830873408" expanded="true" signature="296:731" ph="{...}" />
+            <marker date="1554830873408" expanded="true" signature="319:725" ph="{...}" />
+            <marker date="1554830873408" expanded="true" signature="351:525" ph="{...}" />
           </folding>
         </state>
       </provider>

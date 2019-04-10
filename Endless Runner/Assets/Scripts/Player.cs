@@ -2,31 +2,35 @@
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
-    public float speed;
+    public float speedZ;
     
     public Rigidbody rb;
     public float thrust;
     
     private bool isGrounded = true;
+    
+    public static int speedX = -5;
 
     // Start is called before the first frame update
     void Start() {
         //rb = GetComponent<Rigidbody>();
+        BarrierSpawner.player = gameObject;
         Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update() {
         
-//        var angle = Mathf.Atan2(Input.mousePosition.y, Input.mousePosition.x) * Mathf.Rad2Deg;
-//        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+        transform.Translate(speedX * Time.deltaTime, 0, 0);
+        
+        
         
         transform.eulerAngles = new Vector3(0, -0, 0);
         if (transform.position.z < 3 && transform.position.z > -3) {
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-                transform.Translate(0,0, Time.deltaTime * speed);
+                transform.Translate(0,0, Time.deltaTime * speedZ);
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-                transform.Translate(0,0, Time.deltaTime * -speed);
+                transform.Translate(0,0, Time.deltaTime * -speedZ);
         }
 
 
@@ -46,6 +50,7 @@ public class Player : MonoBehaviour {
 
     void OnCollisionEnter(Collision other) {
             print("Collided!");
+            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
             isGrounded = true;
     }
     

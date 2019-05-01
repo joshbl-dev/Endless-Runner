@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -143,7 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 6965263515363191256, guid: c5db57dc40d7b4b44a6a3a6d3e14d636, type: 3}
-  player: {fileID: 295699085}
 --- !u!4 &234948728
 Transform:
   m_ObjectHideFlags: 0
@@ -172,8 +171,8 @@ GameObject:
   - component: {fileID: 295699088}
   - component: {fileID: 295699087}
   - component: {fileID: 295699092}
-  - component: {fileID: 295699086}
   - component: {fileID: 295699093}
+  - component: {fileID: 295699086}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -58556,6 +58555,7 @@ MonoBehaviour:
   speedZ: 5
   rb: {fileID: 295699093}
   thrust: 7
+  speedX: -10
 --- !u!54 &295699093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58674,7 +58674,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh12804
+  m_Name: pb_Mesh12448
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -58860,7 +58860,6 @@ MonoBehaviour:
   prefabs:
   - {fileID: 8137554422491783645, guid: baab7c7d08b4c9f4e86feeb2018cc5dc, type: 3}
   - {fileID: 8168350000620564940, guid: ca0af95084659f94f95ffbb122940225, type: 3}
-  player: {fileID: 295699085}
 --- !u!4 &1470424066
 Transform:
   m_ObjectHideFlags: 0

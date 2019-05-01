@@ -6,14 +6,17 @@ public class Player : MonoBehaviour {
     
     public Rigidbody rb;
     public float thrust;
+
+    private bool forceFalling = false;
     
     private bool isGrounded = true;
     
-    public static int speedX = -5;
+    public int speedX = -10;
 
     // Start is called before the first frame update
     void Start() {
         //rb = GetComponent<Rigidbody>();
+        FloorSpawner.setSpeed(speedX);
         BarrierSpawner.player = gameObject;
         Cursor.visible = false;
     }
@@ -38,6 +41,10 @@ public class Player : MonoBehaviour {
             rb.velocity += thrust * Vector3.up;
             isGrounded = false;
         }
+        if (!isGrounded && !forceFalling && Input.GetKey(KeyCode.DownArrow)) {
+            rb.velocity += thrust * Vector3.down;
+            forceFalling = true;
+        }
 
 
         if (transform.position.z > 2) {
@@ -52,6 +59,7 @@ public class Player : MonoBehaviour {
             print("Collided!");
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
             isGrounded = true;
+            forceFalling = false;
     }
     
     private void OnTriggerEnter(Collider other) {

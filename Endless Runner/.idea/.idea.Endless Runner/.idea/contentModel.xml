@@ -170,6 +170,7 @@
           <e p="JumpObstacleSpawner.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="StartButton.cs" t="Include" />
+          <e p="UpdateScore.cs" t="Include" />
         </e>
       </e>
       <e p="Endless Runner.sln" t="IncludeFlat" />

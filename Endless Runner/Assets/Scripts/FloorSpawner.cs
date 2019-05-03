@@ -2,7 +2,7 @@
 using UnityEngine;
 
 public class FloorSpawner : BarrierSpawner {
-    private int speed;
+    private static float speed;
     // Use this for initialization
     void Start () {
         var barrier = Instantiate(prefabs[0], new Vector3(player.transform.position.x - 100, -1.5f, 3f),
@@ -11,7 +11,7 @@ public class FloorSpawner : BarrierSpawner {
         StartCoroutine(SpawnFloor());
     }
 
-    public static void setSpeed(int speed) {
+    public static void setSpeed(float speed) {
         speed = speed;
     }
 

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
@@ -10,20 +11,25 @@ public class Player : MonoBehaviour {
     private bool forceFalling = false;
     
     private bool isGrounded = true;
+
+    public int distance = 0;
+    private int startPos;
     
-    public int speedX = -10;
+    public float speedX = -10;
 
     // Start is called before the first frame update
     void Start() {
-        //rb = GetComponent<Rigidbody>();
-        FloorSpawner.setSpeed(speedX);
-        BarrierSpawner.player = gameObject;
+        startPos = (int) transform.position.x;
         Cursor.visible = false;
+        //rb = GetComponent<Rigidbody>();
+        BarrierSpawner.player = gameObject;
+        StartCoroutine("IncreaseSpeed");
     }
 
     // Update is called once per frame
     void Update() {
-        
+
+        distance = startPos - (int) transform.position.x;
         transform.Translate(speedX * Time.deltaTime, 0, 0);
         
         
@@ -37,7 +43,7 @@ public class Player : MonoBehaviour {
         }
 
 
-        if (isGrounded && Input.GetKey(KeyCode.Space)) {
+        if (isGrounded && Input.GetKey(KeyCode.UpArrow)) {
             rb.velocity += thrust * Vector3.up;
             isGrounded = false;
         }
@@ -55,6 +61,16 @@ public class Player : MonoBehaviour {
         }
     }
 
+    IEnumerator IncreaseSpeed() {
+        while (true) {
+            speedX *= 1.01f;
+            FloorSpawner.setSpeed(speedX);
+            yield return new WaitForSeconds(1);
+        }
+    }
+
+
+
     void OnCollisionEnter(Collision other) {
             print("Collided!");
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
@@ -63,6 +79,8 @@ public class Player : MonoBehaviour {
     }
     
     private void OnTriggerEnter(Collider other) {
-        SceneManager.LoadScene("Start");
+        Cursor.visible = true;
+        SceneManager.LoadScene("GameOver");
     }
+
 }
